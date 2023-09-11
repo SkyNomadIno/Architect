@@ -1,0 +1,276 @@
+body {
+    background-color: #f5f5f5f5;
+    font-family: Source;
+    
+}
+
+@font-face {
+font-family: "Source";
+src: url("../fonts/SourceSansPro-Light.ttf")
+}
+@font-face {
+    font-family: "Ikonice";
+    src: url(../fonts/FontAwesome.otf);
+}
+
+header {
+    background-color: #635e5e;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+   
+}
+
+#logo {
+    float: left;
+    color: #bbb;
+    font-size: 1.5em;
+    margin-top: px;
+    margin-left: 2%;
+}
+
+#logo a{
+    color: white;
+    text-decoration: none;
+}
+
+#meni {
+    float: right;
+    color: #bbb;
+    font-size: 1.2em;
+    margin-top: 30px;
+    margin-right: 5%;
+
+    }
+
+#meni a {
+color: #bbb;
+padding: 10px;
+border: 1px solid #bbb;
+border-radius: 4px;
+transition: background-color 0.4s;
+
+}
+
+
+
+#meni a:hover{
+    background-color: white;
+}
+
+.hero {
+    background-image: url(../images/cover.jpg); background-image: linear-gradient(rgba(0, 0, 0, 1)), (rgba(0, 0, 0, 0.2));
+    background-color: #666;
+    height: 700px;
+    width: 100%;
+}
+
+.herotext {
+     position: absolute;
+     top: 40%;
+     left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.herotext p{
+margin-bottom: 40px;
+}
+
+.hero #prvi{
+    background-color: #bbb;
+    color: #323131;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 10px 40px;
+    text-decoration: none;
+}
+
+.hero #prvi:hover{
+    background-color: #fff;
+}
+
+.hero #drugi{
+    background-color: #fff;
+    color: #4e4c4c;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 10px 28px;
+    text-decoration: none;
+}
+
+.hero #drugi:hover{
+    background-color: #efefef;
+    color: #323131;
+}
+
+#iscaseni {
+    margin:  auto;
+    width: 70%;
+    background-color: #fff;
+    color: #786f6f;
+    text-align: center;
+    margin-top: -100px;
+}
+#iscaseni #sezdesetposto {
+    width: 60%;
+    margin: auto;
+}
+
+#iscaseni h2 {
+    padding-top: 50px;
+    font-size: 2em;
+    line-height: 1.5em;
+width: ;
+    text-align: center;
+}
+
+#iscaseni h2::after{
+    content: "";
+    display: inline-block;
+    width: 60%;
+    border-bottom: 1px solid #bbb;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+#iscaseni p{
+    margin-bottom: 50px;
+}
+
+#iscaseni #soliteri img{
+    width: 100%;
+    height: 100%;
+
+}
+
+#ikonice {
+    margin-top: 30px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+#ikonice .kartica {
+    font-family: "Ikonice";
+    box-sizing: border-box;
+    padding: 20px;
+    width: 50%;
+    float: left;
+    background-color: white;
+}
+
+#ikonice .kartica::after{
+    content: "";
+    display: inline-block;
+    width: 60%;
+    border-bottom: 1px solid #bbb;
+
+}
+
+#ikonice .ikonica {
+    color: #6bc5c5;
+    padding-top: 15px;
+    font-size: 1.5em;
+    transition: scale 0.2s;
+}
+
+#ikonice .ikonica:hover {
+    transform: scale(1.5);
+
+}
+
+#gray .sive{
+    margin-top: 30px;
+    width: 48%;
+    float: left;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+#gray img{
+    width: 100%;
+    filter: grayscale();
+    box-sizing: border-box;
+
+
+}
+
+#gray .sive:first-child {
+    margin-right: 4%;
+}
+ 
+#gray .sive a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #bbb;
+    padding: 10px 40px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    transition: all 0.3s;
+
+}
+
+#gray .sive a:hover {
+    background-color: #f3f3f3;
+    color: #4b4949;
+}
+
+#gray .sive p {
+    width: 90%;
+}
+
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: #d8d8d8;
+    clear: both;
+    text-align: center;
+   
+}
+
+footer a:not(:last-child) {
+    width: 50px;
+    height: 50px;
+    text-indent: 100%;
+    overflow: hidden;
+    display: inline-block;
+
+    background-image: url(../images/icons.png);
+}
+
+footer a:not(:last-child):hover {
+opacity: 50%;
+}
+
+footer  #be { background-position: 0 0;}
+footer  #tu { background-position: -50px 0;}
+footer #vi  { background-position: -100px 0;}
+footer #wo { background-position: -150px 0; }
+footer #pi { background-position: -200px 0; }
+footer #sk { background-position: -250px 0; }
+
+footer a:last-child {
+    color: white;
+    text-decoration: none;
+}
+
+
+@media (max-width: 750px){
+   #ikonice .kartica {
+    width: 100%;
+    float: none;
+   }
+}
+
